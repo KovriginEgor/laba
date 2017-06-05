@@ -4,9 +4,9 @@
 
 int main(int argc, char *argv[]) {
 	FILE *fp, *fo;
-	if (argv[1] == NULL) return 0;
-	/*if (argv[1] == NULL) fp = fopen("lab_10_text.txt", "r");
-	else*/ fp = fopen(argv[1], "r");
+
+	if (argv[1] == NULL) fp = fopen("lab_10_text.txt", "r");
+	else fp = fopen(argv[1], "r");
 	fo = fopen("output1.txt", "w");
 	char str[20];
 	char c;
@@ -25,6 +25,5 @@ int main(int argc, char *argv[]) {
 	fclose(fp);
 	fclose(fo);
 
-	getch();
 	return 0;
 }
